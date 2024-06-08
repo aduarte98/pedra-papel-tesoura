@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <!-- Contetudo da pagina -->
+  <div class="conteiner-header">
+    <img src="./images/logo.svg">
+    <div class="card">
+      <span class="titulo">
+        PONTUAÇÃO
+      </span>
+      <span class="pontuacao">
+        0
+      </span>
+    </div>
+  </div>
+  <div class="triangulo">
+    <img src="./images/bg-triangle.svg" id="img_triangulo">
+    <div id="papel" onclick="iniciarAnimacao(this.id)">
+      <div class="papel">
+        <img src="./images/icon-paper.svg">
+      </div>
+    </div>
+    <div id="tesoura" onclick="iniciarAnimacao(this.id)">
+      <div class="tesoura">
+        <img src="./images/icon-scissors.svg">
+      </div>
+    </div>
+    <div id="pedra" onclick="iniciarAnimacao(this.id)">
+      <div class="pedra">
+        <img src="./images/icon-rock.svg">
+      </div>
+    </div>
+    <div class="circulo_preto"></div>
+  </div>
+  <footer>
+    <div class="regra" onclick="abrirModal()">
+      <span>Regra</span>
+    </div>
+  </footer>
+  
+  <!-- Modal -->
+  <div id="myModal" class="modal">
+    <div class="titulo-modal">
+      <span class="titulo-regra">Regras</span>
+      <span class="fechar" onclick="fecharModal()"><img src="./images/icon-close.svg"></span>
+    </div>
+    <img src="./images/image-rules.svg" class="imagem-regra">
+  </div>
+  
+  <script src="./script.js"></script>
+</body>
+</html>
